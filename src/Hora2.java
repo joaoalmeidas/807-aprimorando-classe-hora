@@ -96,6 +96,10 @@ public class Hora2 {
 		
 	}
 	
+	public void tick() {
+		segundo++;
+	}
+	
 	
 	
 	
