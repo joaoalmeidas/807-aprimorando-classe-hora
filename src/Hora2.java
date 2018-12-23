@@ -101,7 +101,7 @@ public class Hora2 {
 			setSegundo(0);
 			incrementaMinuto();
 		}else {
-			setSegundo(segundo++);
+			setSegundo(segundo+1);
 		}
 	}
 	
@@ -110,7 +110,7 @@ public class Hora2 {
 			setMinuto(0);
 			incrementaHora();
 		}else{
-			setMinuto(minuto++);
+			setMinuto(minuto+1);
 		}
 		
 	}
@@ -119,7 +119,7 @@ public class Hora2 {
 		if(getHora() == 23) {
 			setHora(0);
 		}else {
-			setHora(hora++);
+			setHora(hora+1);
 		}
 	}
 	
