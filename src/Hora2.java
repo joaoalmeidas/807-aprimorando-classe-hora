@@ -97,9 +97,31 @@ public class Hora2 {
 	}
 	
 	public void tick() {
-		segundo++;
+		if(getSegundo() == 59) {
+			setSegundo(0);
+			incrementaMinuto();
+		}else {
+			setSegundo(segundo++);
+		}
 	}
 	
+	public void incrementaMinuto() {
+		if(getMinuto() == 59) {
+			setMinuto(0);
+			incrementaHora();
+		}else{
+			setMinuto(minuto++);
+		}
+		
+	}
+	
+	public void incrementaHora() {
+		if(getHora() == 23) {
+			setHora(0);
+		}else {
+			setHora(hora++);
+		}
+	}
 	
 	
 	
